@@ -52,7 +52,8 @@ body {
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #fafcf0;
+  /* color: #fafcf0; */
+  color: #01669d;
   padding: 2rem;
 }
 
