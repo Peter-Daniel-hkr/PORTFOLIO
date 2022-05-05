@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="/portfolio.418c745f.css">
+    <link rel="stylesheet" href="/about.d8cddd1e.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+  <script src="/portfolio.418c745f.js"></script><script src="/about.d8cddd1e.js"></script><script src="/skills.js"></script></head>
+  <body class="contain">
+    <header>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <a href="/home.html"> <i class="fa fa-home"></i></a>
+            </li>
+            <li>
+              <a href="/about.html"><i class="fa fa-user"></i></a>
+            </li>
+            <li>
+              <a href="/skills.html"> <i class="fa fa-briefcase"></i> </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://peter-daniel-hkr.github.io/cv/" download="resume"><i class="fa fa-file-alt"></i></a>
+            </li>
+
+            <li>
+              <a href="mailto:petrus.daniel@protonmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/peter-daniel-a0633b10b" target="_blank">
+                <i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/Peter-Daniel-hkr" target="_blank">
+                <i class="fab fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="about-me">
+        <div class="cards">
+          <div class="card card__one">
+            <img class="card__img" src="/profile.25bca25c.png">
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="container">
+            <p data-typing="i">I</p>
+            <p data-typing="software">'m a Software</p>
+            <p data-typing="developer">Developer</p>
+            <p data-typing="with">with</p>
+            <p data-typing="javascript">JavaScript</p>
+            <p data-typing="html">HTML</p>
+            <p data-typing="css">CSS</p>
+            <p data-typing="nodejs">Node.js</p>
+            <p data-typing="vuejs">Vue.js</p>
+            <p data-typing="java">& Java</p>
+            <p data-typing="skills">Skills</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>$(".contain").ripples({
+  resolution: 256,
+  dropRadius: 8,
+  perturbance: 0.003 // perturbance: 0.001,
+
+});</script>
+    <script>var toggleButton = document.getElementsByClassName("toggle-button")[0];
+var navbarLinks = document.getElementsByClassName("navbar-links")[0];
+toggleButton.addEventListener("click", function () {
+  navbarLinks.classList.toggle("active");
+});</script>
+    <script src="https://daybrush.com/scenejs-timeline/release/latest/dist/timeline.pkgd.min.js"></script>
+    <script src="https://daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+    <script src="/script.baf0e655.js"></script>
+    <script src="/card.1b158c65.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script>gsap.from(".navbar-links", {
+  duration: 2,
+  delay: 1,
+  x: "-200%",
+  ease: "bounce"
+});
+gsap.from(".card", {
+  duration: 3,
+  opacity: 0,
+  y: "100vh",
+  delay: 2,
+  stagger: 0.5 // ease: "power2.in",
+
+});
+gsap.from(".container", {
+  duration: 2,
+  opacity: 0,
+  x: "100%",
+  delay: 1,
+  ease: "power2.in"
+});</script>
+  </body>
+</html>

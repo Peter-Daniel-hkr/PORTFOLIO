@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+/* html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+} */
+* {
+  box-sizing: border-box;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.wrapper {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 55%;
+  left: 60%;
+  transform: translate(-50%, -50%) translateY(20px) scale(1.5);
+  overflow: hidden;
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+[data-typing] {
+  position: absolute;
+  top: 0;
+  /* border: 1px solid #f55; */
+  transform-origin: 0% 0%;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  line-height: 1;
+  color: #333;
+}
+[data-typing="i"] {
+  top: 0;
+  left: 50px;
+  font-size: 90px;
+  height: 70px;
+  line-height: 70px;
+}
+[data-typing="software"] {
+  top: 3px;
+  left: 80px;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+[data-typing="developer"] {
+  top: 30px;
+  left: 80px;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+[data-typing="with"] {
+  top: 74px;
+  left: 265px;
+  font-size: 36px;
+  transform: rotate(90deg);
+  background: #333;
+  color: #fff;
+  padding: 0px 4px;
+}
+[data-typing="javascript"] {
+  top: 74px;
+  left: 229px;
+  transform: rotate(90deg);
+  font-size: 35px;
+}
+[data-typing="html"] {
+  top: 72px;
+  right: 110px;
+  font-size: 25px;
+}
+[data-typing="css"] {
+  top: 97px;
+  right: 110px;
+  font-size: 40px;
+}
+[data-typing="nodejs"] {
+  top: 134px;
+  right: 110px;
+  font-size: 35px;
+}
+[data-typing="vuejs"] {
+  top: 167px;
+  right: 110px;
+  font-size: 35px;
+}
+[data-typing="java"] {
+  top: 200px;
+  right: 110px;
+  font-size: 35px;
+}
+[data-typing="skills"] {
+  top: 238px;
+  left: 80px;
+  font-size: 36px;
+  transform: rotate(360deg);
+  background: #333;
+  color: #fff;
+  padding: 0px 4px;
+}
+
+body .scenejs-editor-timeline {
+  position: fixed;
+  bottom: 0;
+  max-height: 300px;
+}
+
+/* .cards {
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px 20px rgba(0, 0, 0, 0.17);
+  display: inline-block;
+  padding: 30px 35px;
+  perspective: 1800px;
+  text-align: left;
+  transform-origin: 50% 50%;
+  transform-style: preserve-3d;
+  transform: rotateX(11deg) rotateY(16.5deg);
+  min-width: 595px;
+  margin-top: 30%;
+} */
+
+.card {
+  top: 25%;
+  left: -120%;
+
+  border-radius: 15px;
+  box-shadow: 5px 5px 20px -5px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  display: inline-block;
+  height: 250px;
+  overflow: hidden;
+  perspective: 1200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translatez(35px);
+  transition: transform 200ms ease-out;
+  width: 175px;
+  text-align: center;
+  margin: 5px;
+}
+
+.card__img {
+  position: relative;
+  height: 100%;
+}
+
+.card__three .card__img {
+  /* top: 5px;
+  left: -4px; */
+  height: 100%;
+}

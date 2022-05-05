@@ -1,0 +1,19 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build home.html",
+    "start": "parcel home.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.3.1"
+  },
+  "dependencies": {
+    "@scenejs/timeline": "^0.3.0"
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link rel="stylesheet" href="/assets/css/navbar.css" />
+  </head>
+  <body>
+    <!-- inspired from this insta post by sushobhan.svg https://www.instagram.com/p/B14ERo7F3VV/  -->
+    <!-- Developed by http://deepakmoses.com/ -->
+
+    <div class="flex-container">
+      <nav>
+        <div class="selector" id="selector"></div>
+        <ul>
+          <li data-list="1"><span class="material-icons"> dashboard </span></li>
+          <li data-list="2">
+            <span class="material-icons"> chat_bubble_outline </span>
+          </li>
+          <li data-list="3" class="active">
+            <span class="material-icons"> home </span>
+          </li>
+          <li data-list="4">
+            <span class="material-icons"> favorite_border </span>
+          </li>
+          <li data-list="5"><span class="material-icons"> info </span></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Footer starts-->
+    <footer>
+      <!-- Copyright -->
+      <!-- ❤️  -->
+      <div class="footer-copyright">
+        <a href="https://deepakmoses.xyz/" target="_blank"
+          ><span class="material-icons"> person_outline </span></a
+        >
+        <a class="footer_link2" href="https://codepen.io/dpkmos" target="_blank"
+          ><span class="material-icons"> code </span></a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer ends-->
+
+    <!-- Developed by http://deepakmoses.xyz/ -->
+    <script>
+      let linkItems = document.getElementsByTagName("li");
+      let selector = document.getElementById("selector");
+
+      selector.style.left = 3 * 50 - 50 + "px";
+
+      for (let linkItem of linkItems) {
+        linkItem.addEventListener("click", (e) => {
+          let listNum = e.target.dataset.list;
+          selector.style.left = listNum * 50 - 50 + "px";
+          event.target.classList.add("active");
+
+          // remove active class from other links
+          for (let linkItem of linkItems) {
+            if (linkItem.dataset.list !== listNum) {
+              linkItem.classList.remove("active");
+            }
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
