@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build home.html",
+    "build": "parcel build --no-minify home.html",
     "start": "parcel home.html"
   },
   "keywords": [],
