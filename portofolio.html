@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/icons.css" />
+    <link rel="stylesheet" href="assets/css/card.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+  </head>
+  <body class="container">
+    <header>
+      <nav class="navbar">
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li>
+              <a href="/home.html"> <i class="fa fa-home"></i></a>
+            </li>
+            <li>
+              <a class="active" href="/about.html"
+                ><i class="fa fa-user"></i
+              ></a>
+            </li>
+            <li>
+              <a href="/portfolio.html"> <i class="fa fa-briefcase"></i> </a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://peter-daniel-hkr.github.io/cv/"
+                download="resume"
+                ><i class="fa fa-file-alt"></i
+              ></a>
+            </li>
+
+            <li>
+              <a href="mailto:petrus.daniel@protonmail.com" target="_blank"
+                ><i class="fa fa-envelope"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/peter-daniel-a0633b10b"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Peter-Daniel-hkr" target="_blank">
+                <i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap"
+          rel="stylesheet"
+          type="text/css"
+        />
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px"
+          y="0px"
+          width="760px"
+          height="240px"
+          xml:space="preserve"
+        >
+          <defs>
+            <pattern
+              id="water"
+              width=".25"
+              height="2.5"
+              patternContentUnits="objectBoundingBox"
+            >
+              <path
+                fill="#777"
+                d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"
+              />
+            </pattern>
+            <text
+              id="text"
+              transform="translate(2,116)"
+              font-family="'Montserrat'"
+              font-size="120"
+            >
+              PORTFOLIO
+            </text>
+            <mask id="text-mask">
+              <use x="0" y="0" xlink:href="#text" opacity="1" fill="#fff" />
+            </mask>
+            <g id="eff">
+              <use x="0" y="0" xlink:href="#text" fill="#a2a3a5" />
+              <rect
+                class="water-fill"
+                mask="url(#text-mask)"
+                fill="url(#water)"
+                x="-300"
+                y="100"
+                width="1200"
+                height="120"
+                opacity="0.3"
+              >
+                <animate
+                  attributeType="xml"
+                  attributeName="x"
+                  from="-300"
+                  to="0"
+                  repeatCount="indefinite"
+                  dur="2s"
+                />
+              </rect>
+              <rect
+                class="water-fill"
+                mask="url(#text-mask)"
+                fill="url(#water)"
+                y="45"
+                width="1600"
+                height="120"
+                opacity="0.3"
+              >
+                <animate
+                  attributeType="xml"
+                  attributeName="x"
+                  from="-400"
+                  to="0"
+                  repeatCount="indefinite"
+                  dur="3s"
+                />
+              </rect>
+              <rect
+                class="water-fill"
+                mask="url(#text-mask)"
+                fill="url(#water)"
+                y="55"
+                width="800"
+                height="120"
+                opacity="0.3"
+              >
+                <animate
+                  attributeType="xml"
+                  attributeName="x"
+                  from="-200"
+                  to="0"
+                  repeatCount="indefinite"
+                  dur="1.4s"
+                />
+              </rect>
+              <rect
+                class="water-fill"
+                mask="url(#text-mask)"
+                fill="url(#water)"
+                y="55"
+                width="2000"
+                height="120"
+                opacity="0.3"
+              >
+                <animate
+                  attributeType="xml"
+                  attributeName="x"
+                  from="-500"
+                  to="0"
+                  repeatCount="indefinite"
+                  dur="2.8s"
+                />
+              </rect>
+            </g>
+          </defs>
+          <use
+            xlink:href="#eff"
+            opacity="0.9"
+            style="mix-blend-mode: color-burn"
+          />
+        </svg>
+      </div>
+      <div class="cards">
+        <!-- <div class="card card__one">
+          <div class="card__bg"></div>
+          <img class="card__img" src="/pacman.png" />
+          <div class="card__text">
+            <p class="card__title">Pacman</p>
+          </div>
+        </div>
+        <div class="card card__two">
+          <div class="card__bg"></div>
+          <img
+            class="card__img"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_chihiro.png"
+          />
+          <div class="card__text">
+            <p class="card__title">Spirited Away</p>
+          </div>
+        </div>
+        <div class="card card__three">
+          <div class="card__bg"></div>
+          <img
+            class="card__img"
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/62105/3dr_howlcastle.png"
+          />
+          <div class="card__text">
+            <p class="card__title">Howl's Moving Castle</p>
+          </div>
+        </div> -->
+        <div class="card card__three">
+          <!-- <div class="card__bg"></div> -->
+          <img class="card__img" src="assets/images/profile.png" />
+          <!-- <div class="card__text">
+            <p class="card__title">Howl's Moving Castle</p>
+          </div> -->
+        </div>
+      </div>
+    </main>
+    <!-- <footer>
+      <div class="contact-icons">
+        <ul>
+          <li>
+            <a href="mailto:petrus.daniel@protonmail.com" target="_blank"
+              ><i class="fa fa-envelope"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/peter-daniel-a0633b10b"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/Peter-Daniel-hkr" target="_blank">
+              <i class="fab fa-github"></i
+            ></a>
+          </li>
+          <!-- <li>
+            <i class="fa fa-map-marker"></i>
+            <a
+              href="https://www.google.se/maps/place/Olastorpsv%C3%A4gen+23,+291+39+Kristianstad/@56.0517652,14.1452815,17z/data=!3m1!4b1!4m5!3m4!1s0x46540317f343deb9:0x23bf7b5dee85e4ad!8m2!3d56.0517622!4d14.1474702"
+              style="color: #718096"
+              >Olastorpsvägen 23, 29139 Kristianstad</a
+            >
+          </li> -->
+        </ul>
+      </div>
+    </footer> -->
+
+    <script>
+      $(".container").ripples({
+        // resolution: 200,
+        // // dropRadius: 10,
+        // // interactive: true,
+        // perturbance: 0.0002,
+        resolution: 256,
+        dropRadius: 8,
+        perturbance: 0.001,
+        // interactive: true,
+      });
+    </script>
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navbarLinks.classList.toggle("active");
+      });
+    </script>
+    <script>
+      const cards = document.querySelector(".cards");
+      const images = document.querySelectorAll(".card__img");
+      const backgrounds = document.querySelectorAll(".card__bg");
+      const range = 40;
+
+      const calcValue = (a, b) => ((a / b) * range - range / 2).toFixed(1);
+
+      let timeout;
+      document.addEventListener(
+        "mousemove",
+        ({ x, y }) => {
+          if (timeout) {
+            window.cancelAnimationFrame(timeout);
+          }
+
+          timeout = window.requestAnimationFrame(() => {
+            const yValue = calcValue(y, window.innerHeight);
+            const xValue = calcValue(x, window.innerWidth);
+
+            cards.style.transform = `rotateX(${yValue}deg) rotateY(${xValue}deg)`;
+
+            [].forEach.call(images, (image) => {
+              image.style.transform = `translateX(${-xValue}px) translateY(${yValue}px)`;
+            });
+
+            [].forEach.call(backgrounds, (background) => {
+              background.style.backgroundPosition = `${xValue * 0.45}px ${
+                -yValue * 0.45
+              }px`;
+            });
+          });
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
