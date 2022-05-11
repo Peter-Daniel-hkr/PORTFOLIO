@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 20px;
+  overflow: hidden;
 }
 
 .navbar {
@@ -154,8 +155,8 @@ body {
   padding: 0;
   top: 100px;
   line-height: 1;
-  /* color: #aee0fa; */
-  color: #bbd8e8;
+  color: #fdfbf4;
+  /* color: #bbd8e8; */
 }
 [data-typing="i"] {
   top: 0;
@@ -182,7 +183,7 @@ body {
   font-size: 36px;
   transform: rotate(90deg);
   background: rgba(245, 245, 245, 0.4);
-  color: #333;
+  color: #032f47;
   padding: 0px 4px;
 }
 [data-typing="javascript"] {
@@ -222,7 +223,7 @@ body {
   font-size: 36px;
   transform: rotate(360deg);
   background: rgba(245, 245, 245, 0.4);
-  color: #333;
+  color: #032f47;
   padding: 0px 4px;
 }
 

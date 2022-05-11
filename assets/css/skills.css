@@ -410,6 +410,13 @@ section {
   }
 }
 
+@media only screen and (min-width: 1360px) {
+  .animated-text span.letter {
+    font-size: 0.8em;
+    padding-top: 1em;
+  }
+}
+
 .circle {
   animation: circleAnim 1s infinite alternate-reverse;
 }
